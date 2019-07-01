@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-areas:'navbar navbar navbar navbar'
+                        'header header header header';
+
+    grid-template-rows: 15vh 110vh ; 
+    grid-template-columns: 1fr 2fr;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: white;
+  align-items: center;
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
+
+}
+.navbar a {
+    text-decoration: none;
+    color:purple;
+    font-size: 20px;
+
+}
+
+header {
+    grid-area: header;
+    background-color: greenyellow;
+    background-image: url(../img/img_bg_2.jpg);
+    background-size: cover;
+
+
+}
+
+#fundoTransparente {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.5;
+    background: black;
+}
+
+#form {
+    width: 100%;
+    height: 80%;
+    background-color: rgba(245, 245, 245, 0.61);
+    padding-left: 1%;
+   
+}
+
+#form form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+       
+
+}
+
+#form form label {
+    color: white;
+    padding-left: 0%;
+    font-size: 18px;
+    
+}
+
+#form form h1 {
+    color: black;
+}
+
+#form form input {
+    width: 45%;
+    height: 6%;
+    border: none;
+    border-radius: 4px;
+    
+}
+
+#form #contato h1{
+    color: white;
+    font-size: 10pt;
+}
