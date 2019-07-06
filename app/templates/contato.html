@@ -22,43 +22,23 @@
         <a href="">Serviços</a>
         <a href="">Empresa</a>
     </nav>
-
-     <header>
-            <div id="fundoTransparente">
-
-
-                        <div id="form">
-
-                                <form>
-                                    
-                                 <h1>Empresa</h1><br><br>
-                    
-                                        <label>Nome da Empresa</label>
-
-                                        <input type="text" name="nome" placeholder="Digite seu nome aqui..."><br>
-                    
-                                        <label>CNPJ </label>
-
-                                        <input type="text" name="cnpj" placeholder="CNPJ">
-                                        
-                                        <label>E-mail</label>
-                    
-                                        <input type="email" name="email" placeholder="Digite seu email..."><br>
-
-                                        <label>Telefone</label>
-
-                                        <input type="tel" name="phone" placeholder="Digite seu Telefone...">
-
-                                 </form>
-                                
-                       </div>
-
+    <header class="headcont">
+        <div id="cadastro">
             
-            </div>
-
-
-    </header>
-
-
-</body>
-</html>
+            <h1>Cadastre seu Restaurante</h1>
+            {% if msg %}
+            <p>{{ msg }} </p>
+            {% endif %}
+            
+            <form method='POST'>
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">Fazer Pedido</button>
+                
+                
+        </div>
+        </header>
+    <footer>f</footer>
+        
+    </body>
+    </html>
